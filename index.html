@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var computer = {
+        model: '2016',
+        type: 'Laptop',
+        ram: '8GB',
+        hdd: '600GB'
+      };
+      var mobile = new Object();
+      mobile.model = '2016';
+      mobile.type = 'Touch';
+
+      document.write(computer);
+      document.write('<br>');
+      document.write(computer.model);
+      document.write('<br>');
+      document.write(computer['type']);
+      document.write('<br>');
+      document.write('I&apos;m buying a ' + computer.model + ' model with ' + computer.ram +
+      ' ram and ' + computer.hdd + ' hard disk. This computer will be the ' + computer.model);
+      document.write('<br>');
+      document.write('I have the ' + mobile.model + ' Mobile which is actually a ' + mobile.type);
+
+      computer.model = '2017';
+      document.write('<br>');
+      document.write(computer.model);
+    </script>
+  </body>
+</html>
