@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Learn JavaScript</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      var arr1 = ['Apple', 'Mango', 'Banana'], arr_length = '';
+      document.write(arr1.length);
+      arr1[arr1.length] = 'Grapes';
+      document.write('<br>');
+      document.write(arr1.length);
+      document.write('<br>');
+      document.write(arr1 );
+      arr_length = arr1.push('Orange');
+      document.write('<br>');
+      document.write(arr1);
+
+      document.write('<br>');
+      document.write(arr_length);
+
+      arr1.unshift('Pineapple');
+      document.write('<br>');
+      document.write(arr1);
+
+      arr1.pop();
+      document.write('<br>');
+      document.write(arr1);
+
+      arr1.shift();
+      document.write('<br>');
+      document.write(arr1);
+
+      delete arr1[2];
+      document.write('<br>');
+      document.write(arr1);
+
+      arr1.splice(3,0, 'Lemon', 'Guava');
+      document.write('<br>');
+      document.write(arr1);
+
+      arr1.splice(2, 1);
+      document.write('<br>');
+      document.write(arr1);
+
+
+    </script>
+  </body>
+</html>
